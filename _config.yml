@@ -1,1 +1,4 @@
-theme: jekyll-theme-cayman
+permalink: /:title
+post_dirs: true
+plugins:
+  - jekyll-feed

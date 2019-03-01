@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>
+    {% if page.title %}
+      {{ page.title }} &middot; Redflannel Blog
+    {% else %}
+      Redflannel Blog
+    {% endif %}
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Social -->
+  <meta name="description" content="Redflannel helps managers evaluate, recruit, and grow creative talent.">
+  <meta name="og:image" content="https://blog.redflannel.io/images/redflannel.png">
+  <meta name="twitter:image" content="https://blog.redflannel.io/images/redflannel.png">
+
+  <!-- Style -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous" />
+  <link rel="stylesheet" type="text/css" href="/app.css">
+</head>
+<body>
+
+<div class="navbar navbar-expand-sm navbar-light bg-light">
+  <div class="container ">
+    <a class="navbar-brand" href="https://blog.redflannel.io/">
+      <img src="/images/redflannel.png" />
+      The Redflannel Blog
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+      <div class="navbar-nav">
+        <div class="nav-item">
+          <a class="nav-link" href="https://redflannel.io/auth/auth0?origin=/admin">
+            Log In
+          </a>
+        </div>
+        <div class="nav-item">
+          <a class="nav-link" href="https://redflannel.io/auth/auth0?origin=/admin">
+            <strong>Start for free  </strong>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <main>
+    {{content}}
+  </main>
+
+  <hr />
+
+  <footer>
+    <div class="row text-muted">
+      <div class="col-6 text-left">
+        <ul class="list-inline">
+          <li class="list-inline-item">
+            <a class="text-muted" href="https://redflannel.io">Home</a>
+          </li>
+          <li class="list-inline-item">
+            <a class="text-muted" href="mailto:hello@redflannel.io">Help</a>
+          </li>
+          <li class="list-inline-item">
+            <a class="text-muted" href="https://redflannel.io/pages/privacy">Privacy</a>
+          </li>
+          <li class="list-inline-item">
+            <a class="text-muted" href="https://redflannel.io/pages/terms">Terms</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-6 text-right">
+        <p class="mb-0">
+          &copy; Redflannel
+        </p>
+      </div>
+    </div>
+  </footer>
+    
+</div>
+
+<!--
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+-->
+
+</body>
+</html>
